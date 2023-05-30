@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Github Repo if any1 wants to use it: https://github.com/Website-Club/Website-->
 
 <head>
   <meta charset="UTF-8">
@@ -14,9 +13,41 @@
     <h1>Hello World</h1>
     <p>Welcome to Web & App Dev Club!</p>
   </header>
+  <main>
+    <section>
+      <h1>About Us</h1>
+      <article>
+        <!--We should all find photos of ourselves or just write descriptions-->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper metus id ex pretium, sit amet
+        ullamcorper risus fermentum. Nulla quis justo id odio ultricies consequat. Suspendisse porta consequat ante vel
+        egestas. Fusce lacinia massa a luctus fringilla. Aenean malesuada arcu at lectus dapibus tempus. Suspendisse
+        pharetra, enim sodales scelerisque dignissim, nulla lacus elementum ex, sed feugiat turpis ligula nec mauris.
+        Fusce feugiat lorem eu ligula elementum malesuada. Proin magna turpis, dapibus eu eros nec, molestie porta nisi.
+        Etiam quis condimentum ligula, a tincidunt arcu.
+
+        Morbi non arcu justo. Proin tincidunt blandit nibh id tincidunt. Maecenas ac consectetur mauris, vitae mollis
+        tellus. Phasellus quis tincidunt risus. Vestibulum mollis lorem diam, in facilisis dolor aliquet a. Aliquam
+        ultricies, justo a lobortis pretium, neque nisl scelerisque ex, sit amet rhoncus est nibh a diam. Ut convallis
+        tempor finibus.
+      </article>
+    </section>
+    <section class="contact">
+      <h1>Contact Us</h1>
+      <form onsubmit="handleSubmitEvent(event)">
+        <div>
+          <input type="text" name="fname" placeholder="First Name">
+          <input type="text" name="lname" placeholder="Last Name">
+        </div>
+        <input type="text" name="email" placeholder="Email">
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        <button id="submitButton">Submit</button>
+      </form>
+    </section>
+  </main>
   <footer>
-    <a href="https://antirickroll.com/">I made a link! :D</a>
+    <a href="https://antirickroll.com/">I made a link! It's totally not a rickroll :D</a>
   </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>
