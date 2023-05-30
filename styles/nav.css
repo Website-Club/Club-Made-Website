@@ -1,0 +1,74 @@
+.web-bar {
+  z-index: 2;
+  color: black;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  height: 3rem;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.web-bar>* {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: left;
+  align-items: center;
+}
+
+.logo-container {
+  padding-left: 1rem;
+}
+
+.logo-container img {
+  width: 3%;
+  height: 3%;
+}
+
+.nav-bar {
+  padding-right: 1rem;
+}
+
+.nav-bar a {
+  font-size: 1.5rem;
+}
+
+.site-name {
+  font-size: 1.2rem;
+  width: auto;
+  user-select: none;
+  transition: 0.6s ease;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  letter-spacing: 0.2rem;
+}
+
+.site-name::before {
+  content: attr(data-text);
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  color: #0ff00f;
+  -webkit-text-stroke: 0px #383d52;
+  border-right: 1.5px solid #0ff00f;
+  overflow: hidden;
+  animation: backgroundSlide 3s linear infinite;
+  left: 0;
+}
+
+@keyframes backgroundSlide {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+
+  65% {
+    width: 100%;
+    left: 0;
+  }
+}
