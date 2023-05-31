@@ -24,27 +24,22 @@ form {
 }
 
 form div {
+  border: 2px solid black;
+  padding: 0;
+  width: 90%;
   display: flex;
-  flex-grow: 1;
-  gap: 4px;
-  border: none;
 }
 
-form div > * {
-  flex-grow: 1;
-}
-
-form > * {
+form div >* {
   width: 100%;
 }
 
-form input,
-form textarea,
-form button {
+form >* {
   border: 2px solid green;
   background-color: black;
   color: rgb(0, 255, 0);
   outline: none;
+  width: 90%;
 }
 
 form textarea {
