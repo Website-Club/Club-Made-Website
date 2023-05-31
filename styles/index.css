@@ -4,25 +4,54 @@
   align-items: left;
 }
 
+main {
+  margin: 0 auto;
+  width: 80%;
+}
+
+main section h1 {
+  text-align: center;
+}
+
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 4px;
+  margin: 0 auto;
   width: 60%;
 }
 
 form div {
   display: flex;
+  flex-grow: 1;
   gap: 4px;
   border: none;
 }
 
-form div>* {
+form div > * {
   flex-grow: 1;
 }
 
-form>* {
-  width: 100%
+form > * {
+  width: 100%;
+}
+
+form input,
+form textarea,
+form button {
+  border: 2px solid green;
+  background-color: black;
+  color: rgb(0, 255, 0);
+  outline: none;
+}
+
+form textarea {
+  resize: none;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: rgba(0, 255, 0, 0.5);
 }
